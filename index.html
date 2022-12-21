@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/6b2f05754f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/style.css" />
     
@@ -22,19 +23,93 @@
               id="searchInput"
               placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette."
               aria-label="Rechercher un ingrédient, appareil, ustensiles ou une recette."
-            />
-            <i class="fas fa-search"></i>
+            />           
+              <span id="launch-search" class="input-search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </span>
           </form>
         </section>
 
         <section class="search__tags">
-          <div class="search__tags__ingredients"></div>
-          <div class="search__tags__appareils"></div>
-          <div class="search__tags__ustenciles"></div>
+          <div class="search__tags__display">
+            <input class="tags_1" type="button" data-color="blue" data-value="Ingrédients" value="Ingrédients"></div>          
         </section>
 
-        <section class="search__filter"></section>
-        <section class="result" id="result"></section>
+        <section class="search__filters">
+          <div class="btn-group">
+            <div class="dropdown-parent">
+                    <button id="ingredients-tag-btn" class="btn_ingredients" type="button">Ingrédients<span class="fas fa-chevron-down" aria-hidden="true"></span>
+                    </button>
+            <div id="ingredients-search" class="btn btn-primary tag-search">
+                    <input id="ingredients-tag-input" class="tag-search-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
+                    <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+            </div>
+            </div>
+            <div class="dropdown-parent">
+              <button id="Appareils-tag-btn" class="btn_appareils" type="button">Appareils<span class="fas fa-chevron-down" aria-hidden="true"></span>
+              </button>
+            <div id="Apapreils-search" class="btn btn-primary tag-search">
+              <input id="Appareils-tag-input" class="tag-search-input" type="text" name="search-Appareils" placeholder="Rechercher un Appareil">
+              <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+            </div>
+            </div>
+            <div class="dropdown-parent">
+              <button id="Ustencils-tag-btn" class="btn_ustencils" type="button">Ustenciles<span class="fas fa-chevron-down" aria-hidden="true"></span>
+              </button>
+            <div id="Ustencils-search" class="btn btn-primary tag-search">
+              <input id="Ustencils-tag-input" class="tag-search-input" type="text" name="search-Ustencils" placeholder="Rechercher un ustencil">
+              <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+            </div>
+            </div>
+          </div>
+          <!--<div class="dropdown-parent">
+
+            <button id="ingredients-tag-btn" class="btn btn-primary btn-lg mx-2 tag-btn show" type="button">Ingrédients
+              <span class="fas fa-chevron-down" aria-hidden="true"></span>
+            </button>
+            <div class="opened-btn-container bg-primary">
+              <div id="ingredients-search" class="btn btn-primary tag-search">
+                <input id="ingredients-tag-input" class="form-control bg-primary tag-search-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
+                <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+              </div>
+          <select class="filter_1" id="dropdown__ingredients">
+            <option>Ingrédients</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+          <select class="filter_2" id="dropdown__appareils">
+            <option>Appareils</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+          <select class="filter_3" id="dropdown__ustenciles">
+            <option>Ustenciles</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+          <div class="search__filters__ingredients">
+          <input class="filter_1" type="button" data-color="blue" data-value="Ingrédients" value="Ingrédients"><i class='fas fa-angle-down'>
+          </i></div>
+          <div class="search__filters__appareils">
+          <input class="filter_2" type="button" data-color="green" data-value="Appareils" value="Appareils"></div>
+          <div class="search__filters__ustenciles">
+          <input class="filter_3" type="button" data-color="red" data-value="Ustenciles" value="Ustenciles"></div>-->
+        </section>
+        <section class="result" id="result">
+          <article class="cards">  
+            <div class="card__content">
+            <ul class="card__ingredients">
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
+            </ul></div>
+          </article>
+        </section>
       </main>
     </div>
     <script src="scripts/pages/index.js"></script>

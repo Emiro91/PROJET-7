@@ -1,29 +1,29 @@
-async function getfilter() {
+async function getrecipes() {
     // Penser à remplacer par les données récupérées dans le json
-    const { filter } = await (
+    const { recipes } = await (
         fetch('./data/recipes.json')
-          .then((recipes) => recipes.json())
+          .then((response) => response.json())
       );
-      return { filter };
+      return { recipes };
 
-    // et bien retourner le tableau filter seulement une fois
+    // et bien retourner le tableau photographers seulement une fois
     
-}
+};
 
-async function displayData(filter) {
-    const filterSection = document.querySelector(".filter_section");
+/*async function displayData(photographers) {
+    const photographersSection = document.querySelector(".photographer_section");
 
-    filter.forEach((filter) => {
-        const filterModel = filterFactory(filter);
-        const userCardDOM = filterModel.getUserCardDOM();
-        filterSection.appendChild(userCardDOM);
+    photographers.forEach((photographer) => {
+        const photographerModel = photographerFactory(photographer);
+        const userCardDOM = photographerModel.getUserCardDOM();
+        photographersSection.appendChild(userCardDOM);
     });
 };
 
 async function init() {
     // Récupère les datas des photographes
-    const { filter } = await getfilter();
-    displayData(filter);
-};
+    const { photographers } = await getPhotographers();
+    displayData(photographers);
+};*/
 
-init();
+//init();
