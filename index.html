@@ -25,7 +25,7 @@
               aria-label="Rechercher un ingrédient, appareil, ustensiles ou une recette."
             />           
               <span id="launch-search" class="input-search">
-                <i class="fas fa-search" aria-hidden="true"></i>
+                <i class='fa fa-search loupe'></i>
               </span>
           </form>
         </section>
@@ -37,64 +37,38 @@
 
         <section class="search__filters">
           <div class="btn-group">
-            <div class="dropdown-parent">
-                    <button id="ingredients-tag-btn" class="btn_ingredients" type="button">Ingrédients<span class="fas fa-chevron-down" aria-hidden="true"></span>
-                    </button>
-            <div id="ingredients-search" class="btn btn-primary tag-search">
-                    <input id="ingredients-tag-input" class="tag-search-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
-                    <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+            <div class="dropdown-parent_1">
+              <div id="ingredients-btn" class="btn_ingredients">
+                <button id="ingredients-tag-btn" class="btn_tags" type="button">Ingrédients<span class="fas fa-chevron-down" aria-hidden="true"></span>
+                      </button>
+              </div>
+              <div id="ingredients-search" class="btn_ingredients_search">
+                      <input id="ingredients-tag-input" class="tag-search-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
+                      <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+              </div>
             </div>
-            </div>
-            <div class="dropdown-parent">
-              <button id="Appareils-tag-btn" class="btn_appareils" type="button">Appareils<span class="fas fa-chevron-down" aria-hidden="true"></span>
+            <div class="dropdown-parent_2">
+              <div id="appareils-btn" class="btn_appareils">
+              <button id="appareils-tag-btn" class="btn_tags" type="button">Appareils<span class="fas fa-chevron-down" aria-hidden="true"></span>
               </button>
-            <div id="Apapreils-search" class="btn btn-primary tag-search">
-              <input id="Appareils-tag-input" class="tag-search-input" type="text" name="search-Appareils" placeholder="Rechercher un Appareil">
-              <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
-            </div>
-            </div>
-            <div class="dropdown-parent">
-              <button id="Ustencils-tag-btn" class="btn_ustencils" type="button">Ustenciles<span class="fas fa-chevron-down" aria-hidden="true"></span>
-              </button>
-            <div id="Ustencils-search" class="btn btn-primary tag-search">
-              <input id="Ustencils-tag-input" class="tag-search-input" type="text" name="search-Ustencils" placeholder="Rechercher un ustencil">
-              <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
-            </div>
-            </div>
-          </div>
-          <!--<div class="dropdown-parent">
-
-            <button id="ingredients-tag-btn" class="btn btn-primary btn-lg mx-2 tag-btn show" type="button">Ingrédients
-              <span class="fas fa-chevron-down" aria-hidden="true"></span>
-            </button>
-            <div class="opened-btn-container bg-primary">
-              <div id="ingredients-search" class="btn btn-primary tag-search">
-                <input id="ingredients-tag-input" class="form-control bg-primary tag-search-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
+              </div>
+              <div id="Apapreils-search" class="btn_appareils_search">
+                <input id="Appareils-tag-input" class="tag-search-input" type="text" name="search-Appareils" placeholder="Rechercher un Appareil">
                 <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
               </div>
-          <select class="filter_1" id="dropdown__ingredients">
-            <option>Ingrédients</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-          <select class="filter_2" id="dropdown__appareils">
-            <option>Appareils</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-          <select class="filter_3" id="dropdown__ustenciles">
-            <option>Ustenciles</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-          </select>
-          <div class="search__filters__ingredients">
-          <input class="filter_1" type="button" data-color="blue" data-value="Ingrédients" value="Ingrédients"><i class='fas fa-angle-down'>
-          </i></div>
-          <div class="search__filters__appareils">
-          <input class="filter_2" type="button" data-color="green" data-value="Appareils" value="Appareils"></div>
-          <div class="search__filters__ustenciles">
-          <input class="filter_3" type="button" data-color="red" data-value="Ustenciles" value="Ustenciles"></div>-->
+            </div>
+            <div class="dropdown-parent_3">
+              <div id="ustencils-btn" class="btn_ustencils">
+              <button id="ustencils-tag-btn" class="btn_tags" type="button">Ustenciles<span class="fas fa-chevron-down" aria-hidden="true"></span>
+              </button>
+              </div>
+              <div id="Ustencils-search" class="btn_ustencils_search">
+                <input id="Ustencils-tag-input" class="tag-search-input" type="text" name="search-Ustencils" placeholder="Rechercher un ustencil">
+                <span class="fas fa-chevron-up mr-2 align-self-center" aria-hidden="true"></span>
+              </div>
+            </div>
         </section>
+
         <section class="result" id="result">
           <article class="cards">  
             <div class="card__content">

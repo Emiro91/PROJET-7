@@ -27,7 +27,10 @@ html {
     margin-top: 80px;
     width: 400px;
   }
-  
+  .search__input{
+    display: inline;
+  }
+
   .search__input input {
     padding-left: 2rem;
     width: 100%;
@@ -43,30 +46,68 @@ html {
     outline: 2px solid #ce5052;
   }
 
+  .search {
+    margin: 40px;
+  }
 
-  /*test*/
+  /*position loupe*/
+  .search__input {
+  display: flex;
+  align-items: center;
+}
+#launch-search {
+  position: absolute;
+  right: 200px;
+}
+.loupe{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+
+/*Résultats tag de la recherche*/
+.search__tags {
+  margin: 40px;
+}
+
+
+  /*Bouton & input*/
 
 .btn-group {
-  display: flex;
-  font-size: 50px;
-  line-height: 15px;
-  margin: 50px;
+    display: flex;
+    gap: 25px;
+  }
+
+
+  .btn_tags{
+    position: absolute;
+    width:200px;
+    height:50px;
+    z-index: 1;
+  }
+
+
+#ingredients-tag-btn{
+  background: blue;
+}
+#appareils-tag-btn{
+  background: lightgreen;
+}
+#ustencils-tag-btn{
+  background: red;
 }
 
-.dropdown-parent button {
-  border-radius: 15px;
-  width:150px;
+.tag-search-input{
+  opacity: 0.7;
+  width:200px;
   height:50px;
+  background: lightblue;
 }
-.btn_ingredients{
-  background-color: rgb(8, 111, 246);
-}
-.btn_appareils{
-  background-color: lightgreen;
-}
-.btn_ustencils{
-  background-color: red;
-}
+
+
+
+
 /*CARDS__IMG*/
 .card__ingredients {
   display: grid;
