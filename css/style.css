@@ -72,39 +72,69 @@ html {
 }
 
 
-  /*Bouton & input*/
-
 .btn-group {
     display: flex;
     gap: 25px;
+    margin: 40px;
   }
 
+  /*BOUTONS*/
+.btn_tags {
+  display:flex;
+  width:200px;
+  height:50px;
+  z-index: 1;
+  gap: 15px;
+  align-items: center;
+  padding: 25px;
+  font-size: 25px;
+  cursor: grab;
+}
 
-  .btn_tags{
-    position: absolute;
-    width:200px;
-    height:50px;
-    z-index: 1;
-  }
-
-
-#ingredients-tag-btn{
-  background: blue;
+#togg1{
+  background-color: blue;
 }
 #appareils-tag-btn{
-  background: lightgreen;
+  background-color: lightgreen;
 }
 #ustencils-tag-btn{
-  background: red;
+  background-color: red;
 }
 
-.tag-search-input{
+.btn_search{
+  display: flex;
+}
+.arrow{
+  font-size: 35px;
+  position: relative;
+  right: 40px;
+}
+
+
+/*Input*/
+
+.tag-input {
+  display:flex; 
+  border-color:red;
   opacity: 0.7;
   width:200px;
   height:50px;
   background: lightblue;
 }
+/*
+.btn_search
+{
+  display:flex;
+  align-items: center;
+}
 
+  .arrow{
+  display: flex;
+  position: relative;
+  font-size: 25px;
+  right: 30px;
+}
+*/
 
 
 
