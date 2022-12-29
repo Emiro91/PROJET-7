@@ -7,7 +7,7 @@ togg1.addEventListener("click", () => {
   } else {
     togg2.style.display = "block";
   }
-})
+});
 
 function togg(){
   if(getComputedStyle(togg1).display != "none"){
@@ -16,3 +16,12 @@ function togg(){
   }
 };
 togg2.onclick = togg;
+
+
+togg2.addEventListener("click", () => {
+  if(getComputedStyle(togg1).display != "none"){
+    togg1.style.display = "none";
+  } else {
+    togg1.style.display = "block";
+  }
+});
