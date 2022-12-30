@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/6b2f05754f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
     <title>Les petits plats</title>
   </head>
@@ -36,7 +37,49 @@
         </section>
 
         <section class="search__filters">
-          <div class="btn-group">
+          <div class="customInputContainer">
+            <div id="btn-color1" class="customInput">
+                <div class="selectedData">INGREDIENTS</div>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="options">
+                <div class="searchInput">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search">
+                </div>
+                <ul>
+                </ul>
+            </div>
+        </div>    
+        <div class="customInputContainer">
+          <div id="btn-color2" class="customInput">
+              <div class="selectedData">APPAREILS</div>
+              <i class="fa-solid fa-angle-right"></i>
+          </div>
+          <div class="options">
+              <div class="searchInput">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" id="searchInput" placeholder="Search">
+              </div>
+              <ul>
+              </ul>
+          </div>
+      </div>  
+      <div class="customInputContainer">
+        <div id="btn-color3" class="customInput">
+            <div class="selectedData">USTENCILES</div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="options">
+            <div class="searchInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search">
+            </div>
+            <ul>
+            </ul>
+        </div>
+    </div>  
+         <!-- <div class="btn-group">
             <div class="dropdown-parent_1">
               <div id="ingredients-btn" class="btn_ingredients">
                 <button id="togg1" style="background-color: blue" class="btn_tags" type="button">Ingrédients<span class="fas fa-chevron-down" aria-hidden="true"></span>
@@ -44,7 +87,7 @@
               </div>
               <div id="ingredients-search" class="btn_search">
                       <input id="togg2" class="tag-input" type="text" name="search-ingredient" placeholder="Rechercher un ingrédient">
-                     <!-- <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>-->
+                     <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>
               </div>
             </div>
             <div class="dropdown-parent_2">
@@ -54,7 +97,7 @@
               </div>
               <div id="Apapreils-search" class="btn_search">
                 <input id="togg2" class="tag-input" type="text" name="search-Appareils" placeholder="Rechercher un Appareil">
-                     <!-- <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>-->
+                     <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>
                     </div>
             </div>
             <div class="dropdown-parent_3">
@@ -64,12 +107,14 @@
               </div>
               <div id="Ustencils-search" class="btn_search">
                 <input id="togg2" class="tag-input" type="text" name="search-Ustencils" placeholder="Rechercher un ustencil">
-                     <!-- <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>-->
+                     <span class="fas fa-chevron-up arrow" aria-hidden="true"></span>
                     </div>
             </div>
+          </div>
+        -->
         </section>
 
-        <section class="result" id="result">
+       <!-- <section class="result" id="result">
           <article class="cards">  
             <div class="card__content">
             <ul class="card__ingredients">
@@ -77,16 +122,13 @@
               <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
               <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
               <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
-              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
-              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
-              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
-              <li class="cards_img"><a href="#"><img src="/assets/images/31h9+33bQ2L._AC_SY300_SX300_.jpg" alt=""></a><p class="card__description">description</p></li>
-            </ul></div>
+              </ul></div>
           </article>
-        </section>
+        </section>-->
       </main>
     </div>
     <script src="scripts/pages/index.js"></script>
     <script src="scripts/utils/cacher.js"></script> 
+    <script src="scripts/utils/test.js"></script>
    </body>
 </html>
